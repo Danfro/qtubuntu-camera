@@ -54,6 +54,9 @@ private:
     QCamera::State m_state;
     QCamera::Status m_status;
     QCamera::CaptureModes m_captureMode;
+
+    friend AalCameraService;
+    void setStatus(QCamera::Status);
 };
 
 #endif
